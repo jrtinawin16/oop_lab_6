@@ -13,3 +13,22 @@ class Car:
     
     def get_speed(self):
         return self.__speed
+    
+    # Setter methods
+    def set_year_model(self, year_model):
+        self.__year_model = year_model
+
+    def set_make(self, make):
+        self.__make = make
+
+    def set_speed(self, speed):
+        self.__speed = speed
+
+    # Accelerate and brake
+    def accelerate(self):
+        self.__speed += 5
+    
+    def brake(self):
+        self.__speed -= 5
+
+my_car = Car (2025, "Mitsubishi Montero Sport")
